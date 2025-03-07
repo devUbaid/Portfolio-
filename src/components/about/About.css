@@ -119,7 +119,7 @@
   font-size: 0.9rem;
   color: #333;
   font-family: monospace;
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 .skill-icon {
@@ -144,6 +144,7 @@
   .about-description {
       margin-bottom: 3rem;
       font-size: 0.9rem;
+      padding: 0 1.4rem;
   }
 
   .about-content {
@@ -156,7 +157,7 @@
   }
 
   .personal-image {
-      aspect-ratio: 8/10;
+      aspect-ratio: 15/15;
       border-radius: 1rem;
   }
 
@@ -193,11 +194,12 @@
 
   .skill-item {
       flex: 1 1 calc(33.333% - 0.5rem);
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       padding: 0.4rem;
       justify-content: center;
       text-align: center;
-      font-weight: 600;
+      font-weight: 700 !important;
+      letter-spacing: -0.05rem;
   }
 
   .skill-icon {

@@ -72,7 +72,11 @@
 
 .technical-container {
   background-image: url('/public/images/dataism-24.svg');
+  position: relative;
+  width: 100%;
+  /* background: url(http://localhost:3000/static/media/dataism-24.142ee9a….svg); */
   background-repeat: no-repeat;
+  background-size: 100%;
   background-position: right;
 }
 
@@ -177,19 +181,14 @@
 .tool-name, .tech-name {
   font-family: 'Fira Code', monospace;
   letter-spacing: -0.01rem;
-  font-size: .07rem;
+  font-size: 0.75rem;
 }
 
-@media (max-width: 1024px) {
-  .technical-main {
-    flex-direction: column;
-  }
+@media (max-width: 1024px) { *
 
-  .technical-cards {
-    width: 100%;
-    padding: 1rem;
+  .technical-container {
+    background-size: cover;
   }
-
   .technical-background {
     position: absolute;
     width: 100%;
@@ -212,7 +211,11 @@
   .hardskills-label{
     max-width: 38%;
   }
-  
+  .technical-cards {
+    width: 100%;
+    padding: 1rem;
+  }
+
   .tools-grid, .technologies-grid {
     gap: 8px;
   }

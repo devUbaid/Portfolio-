@@ -39,7 +39,7 @@
   font-size: 5rem;
   font-weight: 700;
   margin: 1rem 0 2rem;
-  color: #3a3a3a;
+  color: #2e2e2e;
   opacity: 0.8;
   line-height: 1.1;
 }
@@ -62,7 +62,7 @@
 .btn-primary {
   background-color: #002aff;
   color: white;
-  padding: 0.85rem 2.2rem;
+  padding: 0.85rem 1.5rem;
   border-radius: 2rem;
   text-decoration: none;
   font-weight: 600;
@@ -87,7 +87,7 @@
   font-size: 1rem;
   text-decoration: none;
   transition: color 0.3s;
-  padding: 0.8rem 2.2rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 2rem;
   border: 1px solid #6a6b6c5b;
 }
@@ -116,6 +116,7 @@
   
   .hero-bio {
     font-size: .95rem;
+    font-weight: 700;
     margin: 2rem auto;
     letter-spacing: 0;
   }

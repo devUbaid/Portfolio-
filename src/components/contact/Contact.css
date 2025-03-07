@@ -175,10 +175,12 @@
   
   .contact-title {
     font-size: 22px;
+    font-weight: 700;
   }
   
   .contact-text {
     font-size: 14px;
+    font-weight: 500;
   }
   
   .social-icon-circle {
