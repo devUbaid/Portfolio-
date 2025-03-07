@@ -1,0 +1,361 @@
+:root {
+  --bg-light-gray: #f5f5f5;
+  --text-dark: #333;
+  --text-gray: #666;
+  --tag-bg: #f0f0f0;
+  --primary-gradient: linear-gradient(90deg, #424bff 0%, #1e84d8 100%);
+  --button-hover: #eaeaea;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.projects-section {
+  width: 100%;
+  background: linear-gradient(180deg,#f5f6f7 10%, #ede5f7 40%, #ecf4fbe7 100%);
+}
+
+.featured-projects-section {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  padding: 80px 0;
+}
+
+.featured-projects-header {
+  text-align: center;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.section-label {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1rem;
+  font-family: monospace;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 1px solid #a8a6a6;
+  width: 20%;
+  margin: auto;
+}
+
+.featured-projects-header h2 {
+  font-size: 4rem;
+  color: var(--text-dark);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.05rem;
+}
+
+.subtitle {
+  margin: 0 auto;
+  color: var(--text-gray);
+  font-size: 1rem;
+  letter-spacing: 0;
+  font-weight: 600;
+  font-family: "Fira Code", monospace;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.project-card {
+  display: flex;
+  background: white;
+  border-radius: 24px;
+  border: 1px solid #e6e3e3;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+}
+
+.project-info {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 2rem;
+}
+
+.project-header h2 {
+  font-size: 1.7rem;
+  margin-right: 15px;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  /* gap: 2rem; */
+  letter-spacing: -.06rem;
+}
+
+.project-type {
+  background-color: var(--tag-bg);
+  color: var(--text-gray);
+  padding: 3px 15px;
+  border-radius: 1rem;
+  font-size: .8rem;
+}
+.project-type i {
+  font-size: 0.9rem;
+  margin-right: .5rem;
+  color: black;
+}
+
+.project-description {
+  line-height: 1.7;
+  margin-bottom: 25px;
+  font-size: 1.15rem;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.tech-tag {
+  border: 1px solid #3a3a3a2f;
+  color: var(--text-dark);
+  padding: 5px 12px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.tech-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  border-color: #3a3a3a6b;
+}
+
+.tech-tag i {
+  font-size: 0.9rem;
+  color: #424bff;
+}
+
+.tech-name {
+  font-family: "Fira Code", monospace;
+  font-size: 0.75rem;
+  letter-spacing: -0.01rem;
+}
+
+/* Project links styles */
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-arrow {
+  font-size: 2.2rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-arrow:hover {
+  color: #4a4a4a;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.btn svg {
+  transition: transform 0.2s ease;
+}
+
+.btn:hover svg {
+  transform: scale(1.1);
+}
+
+.btn-live {
+  background-color: white;
+  color: #0f8c2a;
+}
+
+.btn-live:hover {
+  background-color: var(--text-dark);
+  color: var(--button-hover);
+}
+
+.btn-github {
+  background-color: white;
+  color: #333;
+}
+
+.btn-github:hover {
+  background-color: var(--text-dark);
+  color: var(--button-hover);
+}
+
+.project-mockup {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px 20px;
+}
+
+.project-mockup img {
+  max-width: 100%;
+  max-height: 700px;
+  object-fit: contain;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-mockup img {
+  transform: translateY(-5px);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .project-card {
+    flex-direction: column;
+  }
+
+  .project-info, .project-mockup {
+    flex: none;
+    width: 100%;
+  }
+
+  .featured-projects-header h2 {
+    font-size: 3rem;
+  }
+
+  .project-info {
+    padding: 30px;
+    padding-bottom: 20px;
+  }
+
+  .project-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .project-technologies {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-projects-section {
+    padding: 80px 13px;
+    gap: 4rem;
+  }
+
+  .section-label {
+    width: 50%;
+    font-size: 0.85rem;
+  }
+  
+  .featured-projects-header h2 {
+    font-size: 2.75rem;
+  }
+
+  .subtitle {
+    font-size: 0.875rem;
+  }
+  
+  .project-technologies {
+    row-gap: 8px;
+  }
+  
+  .tech-tag {
+    padding: 4px 10px;
+    font-size: 0.75rem;
+  }
+  
+
+  
+  .project-arrow {
+    margin-bottom: 10px;
+  }
+  
+  .action-buttons {
+    width: 70%;
+  }
+  
+  .btn {
+    flex: 1;
+    justify-content: center;
+    font-size: 0.8rem;
+    padding: 7px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-projects-header h2 {
+    font-size: 2.2rem;
+  }
+  
+  .section-label {
+    width: 70%;
+    font-size: 0.75rem;
+  }
+  
+  .project-info {
+    padding: 20px;
+  }
+
+
+  
+  .project-header h2 {
+    font-size: 1.5rem;
+    margin-right: 0;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+  }
+  
+  .tech-tag {
+    font-size: 0.7rem;
+  }
+}

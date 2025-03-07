@@ -1,0 +1,252 @@
+.technical-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f4f4;
+}
+
+
+
+.technical-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.hardskills-label {
+  text-align: center;
+  max-width: 19%;
+  margin: auto;
+  color: #4e4c4c;
+  background: linear-gradient(90deg, #424bff 0%, #1e84d8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: .4rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-family: monospace;
+  margin-bottom: .5rem;
+  border-radius: 10px;
+  padding: 0 .8rem;
+  border: 1px solid #9e9c9c;
+}
+
+.technical-header h2 {
+  font-size: 3.75rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.technical-header .subtitle {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  color: #333;
+  line-height: 1.6;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  font-family: 'Fira Code', monospace;
+}
+
+.technical-main {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 4rem auto;
+  z-index: 1;
+}
+
+.technical-cards {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  z-index: 10;
+}
+
+.technical-container {
+  background-image: url('/public/images/dataism-24.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.technical-card {
+  background: white;
+  border-radius: 2rem;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  position: relative;
+  border: 1px solid #dfdfdf;
+}
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Icon styles - Using SVG as background */
+.network-icon::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23424bff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 17H7A5 5 0 0 1 7 7h2'/%3E%3Cpath d='M15 7h2a5 5 0 1 1 0 10h-2'/%3E%3Cline x1='8' y1='12' x2='16' y2='12'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.grid-icon::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23424bff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='3' width='7' height='7'/%3E%3Crect x='14' y='3' width='7' height='7'/%3E%3Crect x='14' y='14' width='7' height='7'/%3E%3Crect x='3' y='14' width='7' height='7'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.technologies-icon::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23424bff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='16 18 22 12 16 6'/%3E%3Cpolyline points='8 6 2 12 8 18'/%3E%3Cline x1='12' y1='2' x2='12' y2='22'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.technical-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.technical-card p {
+  letter-spacing: -.02rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.tools-grid, .technologies-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-top: 1px solid #c7c4c4;
+  padding-top: 1rem;
+}
+
+.tool-tag, .tech-tags {
+  border: 1px solid #3a3a3a57;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 9rem;
+  font-size: 0.7rem;
+  opacity: 90%;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.tool-tag:hover, .tech-tags:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  opacity: 100%;
+  border-color: #3a3a3a;
+}
+
+.tool-tag i, .tech-tags i {
+  font-size: 0.9rem;
+  color: #424bff;
+}
+
+.tool-name, .tech-name {
+  font-family: 'Fira Code', monospace;
+  letter-spacing: -0.01rem;
+  font-size: .07rem;
+}
+
+@media (max-width: 1024px) {
+  .technical-main {
+    flex-direction: column;
+  }
+
+  .technical-cards {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .technical-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+  }
+  
+  .tool-tag, .tech-tags {
+    padding: 5px 12px;
+  }
+}
+
+@media (max-width: 768px){
+  .technical-header .subtitle{
+    font-size: .9rem;
+  }
+  .technical-header h2{
+    font-size: 2.75rem;
+  }
+  .hardskills-label{
+    max-width: 38%;
+  }
+  
+  .tools-grid, .technologies-grid {
+    gap: 8px;
+  }
+  
+  .tool-tag, .tech-tags {
+    font-size: 0.65rem;
+    padding: 4px 10px;
+  }
+  
+  .tool-tag i, .tech-tags i {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hardskills-label {
+    max-width: 60%;
+    font-size: 0.8rem;
+  }
+  
+  .technical-header h2 {
+    font-size: 2.2rem;
+  }
+  
+  .technical-card {
+    padding: 20px;
+  }
+  
+  .tool-tag, .tech-tags {
+    padding: 3px 8px;
+    font-size: 0.6rem;
+  }
+  
+  .tool-tag i, .tech-tags i {
+    font-size: 0.75rem;
+  }
+}
