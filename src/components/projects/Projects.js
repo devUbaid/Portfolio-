@@ -47,8 +47,8 @@ const Projects = () => {
       description: 'A responsive, modern portfolio showcasing my skills, projects, and creative approach to web development and design.',
       technologies: ['REACT', 'NEXT.JS', 'TAILWIND CSS', 'FRAMER MOTION', 'JAVASCRIPT', 'HTML5', 'CSS3'],
       image: "/images/project3.png",
-      liveLink: "https://portfolio.example.com",
-      githubLink: "https://github.com/username/portfolio"
+      liveLink: "https://mohdubaidportfolio.vercel.app/",
+      githubLink: "https://github.com/devUbaid/Portfolio-"
     },
     {
       name: 'CodePen Clone',
