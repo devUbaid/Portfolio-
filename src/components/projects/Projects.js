@@ -26,7 +26,7 @@ const Projects = () => {
     {
       name: 'Storify',
       type: 'Public',
-      description: 'The StoriFy app is a file storage & management system that allows users to upload, manage, share and organize their files easily.',
+      description: 'The Storify app is a file storage & management system that allows users to upload, manage, share and organize their files easily.',
       technologies: ['REACT','TAILWIND CSS','VITE', 'NODE JS', 'EXPRESS JS', 'MONGODB', 'MULTER', 'JWT', 'GIT(HUB)'],
       image: "/images/project1.png",
       liveLink: "https://storify-app.vercel.app/",
