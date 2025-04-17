@@ -26,11 +26,19 @@ const Projects = () => {
     {
       name: 'Letter Drive',
       type: 'Public',
+<<<<<<< HEAD
       description: 'Letter Drive, a secure and smart letter-writing web application where users can write, save, and upload letters to Google Drive with a clean and seamless experience.',
       technologies: ['REACT', 'NODE JS', 'EXPRESS JS', 'MONGODB', 'OAUTH2.0', 'GOOGEL DRIVE API'],
       image: "/images/project5.png",
       liveLink: "https://letterdrive.vercel.app/",
       githubLink: "https://github.com/devUbaid/LetterDrive"
+=======
+      description: 'The Storify app is a file storage & management system that allows users to upload, manage, share and organize their files easily.',
+      technologies: ['REACT','TAILWIND CSS','VITE', 'NODE JS', 'EXPRESS JS', 'MONGODB', 'MULTER', 'JWT', 'GIT(HUB)'],
+      image: "/images/project1.png",
+      liveLink: "https://storify-app.vercel.app/",
+      githubLink: "https://github.com/devUbaid/Storify"
+>>>>>>> 5e720b9cef28e495b18a930153ed6ec17efcbea7
     },
     {
       name: 'Expense Analyzer',
