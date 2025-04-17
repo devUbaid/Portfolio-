@@ -24,13 +24,13 @@ const Projects = () => {
 
   const projects = [
     {
-      name: 'Storify',
+      name: 'Letter Drive',
       type: 'Public',
-      description: 'The StoriFy app is a file storage & management system that allows users to upload, manage, share and organize their files easily.',
-      technologies: ['REACT','TAILWIND CSS','VITE', 'NODE JS', 'EXPRESS JS', 'MONGODB', 'MULTER', 'JWT', 'GIT(HUB)'],
-      image: "/images/project1.png",
-      liveLink: "https://storify-app.vercel.app/",
-      githubLink: "https://github.com/devUbaid/Storify"
+      description: 'Letter Drive, a secure and smart letter-writing web application where users can write, save, and upload letters to Google Drive with a clean and seamless experience.',
+      technologies: ['REACT', 'NODE JS', 'EXPRESS JS', 'MONGODB', 'OAUTH2.0', 'GOOGEL DRIVE API'],
+      image: "/images/project5.png",
+      liveLink: "https://letterdrive.vercel.app/",
+      githubLink: "https://github.com/devUbaid/LetterDrive"
     },
     {
       name: 'Expense Analyzer',
@@ -42,6 +42,15 @@ const Projects = () => {
       githubLink: "https://github.com/devUbaid/ExpenseAnalyzer-Frontend"
     },
     {
+      name: 'Storify',
+      type: 'Public',
+      description: 'The StoriFy app is a file storage & management system that allows users to upload, manage, share and organize their files easily.',
+      technologies: ['REACT','TAILWIND CSS','VITE', 'NODE JS', 'EXPRESS JS', 'MONGODB', 'MULTER', 'JWT', 'GIT(HUB)'],
+      image: "/images/project1.png",
+      liveLink: "https://storify-app.vercel.app/",
+      githubLink: "https://github.com/devUbaid/Storify"
+    },  
+    {
       name: 'Portfolio Website',
       type: 'Public',
       description: 'A responsive, modern portfolio showcasing my skills, projects, and creative approach to web development and design.',
@@ -50,15 +59,7 @@ const Projects = () => {
       liveLink: "https://mohdubaidportfolio.vercel.app/",
       githubLink: "https://github.com/devUbaid/Portfolio-"
     },
-    {
-      name: 'CodePen Clone',
-      type: 'Public',
-      description: 'CodePen is a web application built with React.js that provides a Dynamic , Responsive and interactive coding playground.',
-      technologies: ['REACT', 'JAVASCRIPT', 'HTML', 'CSS', 'GIT(HUB)'],
-      image: "/images/project4.png",
-      liveLink: "https://code-pen-cloneapp.vercel.app/",
-      githubLink: "https://github.com/devUbaid/codePen"
-    }
+    
   ];
 
   return (
